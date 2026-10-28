@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульяновська Юлія Вікторівна — Персональна сторінка</title>
+    <style>
+        :root {
+            --primary-color: #0d3b66;
+            --secondary-color: #f4f4f9;
+            --accent-color: #0066cc;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            gap: 30px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .hero-img-placeholder {
+            width: 180px;
+            height: 220px;
+            background-color: #e9ecef;
+            border: 2px dashed #adb5bd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            border-radius: 6px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .hero-info h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .hero-info h2 {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .contact-list {
+            list-style: none;
+            font-size: 0.95rem;
+        }
+
+        .contact-list li {
+            margin-bottom: 8px;
+        }
+
+        .contact-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 25px;
+        }
+
+        section h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Disciplines Table/List */
+        .discipline-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: var(--secondary-color);
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .btn-syllabus {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+
+        .btn-syllabus:hover {
+            background-color: #004b99;
+        }
+
+        ul.simple-list {
+            padding-left: 20px;
+        }
+
+        ul.simple-list li {
+            margin-bottom: 6px;
+        }
+
+        /* Accordion / Details */
+        details {
+            background: var(--secondary-color);
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        details p, details ul {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 0.85rem;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #d0e1fd;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .discipline-item {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🎓 УМСФ</div>
+        <nav>
+            <a href="#">Про нас</a>
+            <a href="#">Структура</a>
+            <a href="#">Наука</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-img-placeholder">
+                [ Фото ]
+            </div>
+            <div class="hero-info">
+                <h1>Ульяновська Юлія Вікторівна</h1>
+                <h2>Завідувач кафедри, доцент, кандидат технічних наук</h2>
+                <ul class="contact-list">
+                    <li><strong>Електронна пошта:</strong> <a href="mailto:ulyanovska@umsf.dp.ua">ulyanovska@umsf.dp.ua</a>, <a href="mailto:yuliyauyv@gmail.com">yuliyauyv@gmail.com</a></li>
+                    <li><strong>Профіль Google Scholar:</strong> <a href="https://scholar.google.com" target="_blank">Переглянути профіль</a></li>
+                    <li><strong>Аудиторія:</strong> 405 (Кафедра КНІПЗ)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Disciplines -->
+        <section>
+            <h3>Дисципліни, що викладає</h3>
+            <div class="discipline-item">
+                <span>Комп'ютерна дискретна математика</span>
+                <a href="#" class="btn-syllabus">Завантажити силабус (PDF)</a>
+            </div>
+            <div class="discipline-item">
+                <span>Сучасні методи теорії інформації та кодування</span>
+                <a href="#" class="btn-syllabus">Завантажити силабус (PDF)</a>
+            </div>
+            <div class="discipline-item">
+                <span>Теорія алгоритмів</span>
+                <a href="#" class="btn-syllabus">Завантажити силабус (PDF)</a>
+            </div>
+            <div class="discipline-item">
+                <span>Методи та системи штучного інтелекту</span>
+                <a href="#" class="btn-syllabus">Завантажити силабус (PDF)</a>
+            </div>
+        </section>
+
+        <!-- Research Interests -->
+        <section>
+            <h3>Сфера наукових інтересів</h3>
+            <ul class="simple-list">
+                <li>Інтелектуальні автоматизовані системи</li>
+                <li>Методи обробки нечітких та неповних даних</li>
+            </ul>
+        </section>
+
+        <!-- Organizational Work -->
+        <section>
+            <h3>Організаційна та кураторська робота</h3>
+            <ul class="simple-list">
+                <li>Завідувач кафедри комп'ютерних наук та інженерії програмного забезпечення</li>
+                <li>Куратор навчальних груп: К 21-1м, К 22-1м, К 22-2м</li>
+                <li>Член приймальної комісії з вивчення документів вступників</li>
+            </ul>
+        </section>
+
+        <!-- Publications & Certificates -->
+        <section>
+            <h3>Наукові праці та сертифікати</h3>
+            <details>
+                <summary>Основні наукові та навчально-методичні праці</summary>
+                <ul class="simple-list">
+                    <li>Моделі та методи обробки даних в єдиній автоматизованій інформаційній системі митної служби (дисертаційне дослідження).</li>
+                    <li>Методичні вказівки до виконання лабораторних робіт з дисципліни "Теорія алгоритмів".</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Сертифікати та підвищення кваліфікації</summary>
+                <p>Сертифікати про проходження міжнародних та національних стажувань з інформаційних технологій.</p>
+            </details>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Університет митної справи та фінансів | Офіційний сайт: <a href="https://umsf.dp.ua" target="_blank">umsf.dp.ua</a>
+    </footer>
+
+</body>
+</html>
